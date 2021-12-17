@@ -5,8 +5,6 @@ const RepliesTableTestHelper = require('../../../../tests/RepliesTableTestHelper
 const createServer = require('../createServer');
 const pool = require('../../database/postgres/pool');
 const container = require('../../container');
-const ReplyRepositoryPostgres = require('../../repository/ReplyRepositoryPostgres');
-const NotFoundError = require('../../../Commons/exceptions/NotFoundError');
 
 describe('Replies endpoint', () => {
   afterAll(async () => {
